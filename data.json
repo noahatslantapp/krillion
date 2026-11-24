@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T17:53:54+00:00",
+ "updated": "2026-11-24T20:43:26+00:00",
  "puzzles": [
   {
    "num": 132,
@@ -21,14 +21,14 @@
      "tiles": "FSLSSSF"
     },
     {
-     "name": "MURP",
-     "score": 380,
-     "tiles": "SFSLFLF"
-    },
-    {
      "name": "Johnny Richards",
      "score": 380,
      "tiles": "SFLLFSF"
+    },
+    {
+     "name": "MURP",
+     "score": 380,
+     "tiles": "SFSLFLF"
     },
     {
      "name": "Haley Brown",
@@ -67,9 +67,9 @@
      "tiles": "SSBFLSS"
     },
     {
-     "name": "Jeff",
+     "name": "Johnny Richards",
      "score": 330,
-     "tiles": "SSFSFFS"
+     "tiles": "FSSFSSF"
     },
     {
      "name": "Emma Walton",
@@ -77,9 +77,9 @@
      "tiles": "FSSSFSF"
     },
     {
-     "name": "Johnny Richards",
+     "name": "Jeff",
      "score": 330,
-     "tiles": "FSSFSSF"
+     "tiles": "SSFSFFS"
     },
     {
      "name": "Haley Brown",
@@ -248,14 +248,14 @@
    "date": "2026-11-16",
    "scores": [
     {
-     "name": "Johnny Richards",
-     "score": 350,
-     "tiles": "FLSLXFS"
-    },
-    {
      "name": "Jonathan Farnsworth",
      "score": 350,
      "tiles": "FLXSLSF"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 350,
+     "tiles": "FLSLXFS"
     },
     {
      "name": "John Sandberg",
@@ -304,14 +304,14 @@
      "tiles": "BSFFFSS"
     },
     {
-     "name": "Mckade Adams",
-     "score": 270,
-     "tiles": "XSFFSSF"
-    },
-    {
      "name": "Chris Arnold",
      "score": 270,
      "tiles": "SFFFFSF"
+    },
+    {
+     "name": "Mckade Adams",
+     "score": 270,
+     "tiles": "XSFFSSF"
     },
     {
      "name": "Haley Brown",
@@ -397,14 +397,14 @@
      "tiles": "BFSLLSB"
     },
     {
-     "name": "Mitch",
-     "score": 335,
-     "tiles": "LLFFBBL"
-    },
-    {
      "name": "Jeff",
      "score": 335,
      "tiles": "SLXBSSS"
+    },
+    {
+     "name": "Mitch",
+     "score": 335,
+     "tiles": "LLFFBBL"
     },
     {
      "name": "Jonathan Farnsworth",
@@ -428,14 +428,14 @@
    "date": "2026-11-09",
    "scores": [
     {
-     "name": "Jeff",
-     "score": 410,
-     "tiles": "SFSLFLS"
-    },
-    {
      "name": "MURP",
      "score": 410,
      "tiles": "LLFSSFS"
+    },
+    {
+     "name": "Jeff",
+     "score": 410,
+     "tiles": "SFSLFLS"
     },
     {
      "name": "Mitch",
@@ -505,14 +505,14 @@
      "tiles": "FSSFSSS"
     },
     {
-     "name": "Jeff",
-     "score": 310,
-     "tiles": "SSBFFSS"
-    },
-    {
      "name": "Jonathan Farnsworth",
      "score": 310,
      "tiles": "BFSFSSS"
+    },
+    {
+     "name": "Jeff",
+     "score": 310,
+     "tiles": "SSBFFSS"
     },
     {
      "name": "Chris Arnold",
