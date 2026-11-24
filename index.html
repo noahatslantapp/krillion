@@ -161,7 +161,7 @@
           <th data-k="best" class="hide-sm">Deepest</th>
           <th data-k="wins">Wins</th>
           <th data-k="dives">Dives</th>
-          <th data-k="lanterns" class="hide-sm" title="Midnight-zone answers (85+)">🏮</th>
+          <th data-k="stars" class="hide-sm" title="One in a krillion answers (100)">🌟</th>
         </tr></thead>
         <tbody id="tbody"></tbody>
       </table>
@@ -239,7 +239,7 @@ function renderTable(all){
       <td class="hide-sm">${r.best}<span class="unit">m</span></td>
       <td>${r.wins}</td>
       <td class="muted">${r.dives}</td>
-      <td class="hide-sm muted">${r.lanterns}</td>
+      <td class="hide-sm muted">${r.stars}</td>
     </tr>`).join("");
   document.querySelectorAll("th[data-k]").forEach(th => th.classList.toggle("sorted", th.dataset.k === sortKey));
   document.getElementById("shallow").innerHTML = sh.length

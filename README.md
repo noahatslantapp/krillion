@@ -55,7 +55,7 @@ its own every 15 minutes, and only commits when new scores show up.
 ## How scoring works on the board
 Score is shown as depth in meters. Each of the 7 tiles is worth:
 ⬛ 0 · 🫧 10 · 🐟 30 · 🦑 60 · 🏮 85 · 🌟 100. Ranking defaults to average
-depth; click any column header to sort by deepest dive, wins, dives, or 🏮
-(midnight-zone answers). A daily win goes to the top score that day, and ties
+depth; click any column header to sort by deepest dive, wins, dives, or 🌟
+(one-in-a-krillion answers). A daily win goes to the top score that day, and ties
 all get the win. Only the first score someone posts for a puzzle counts, and
 scores posted in threads are ignored (thread your answers, as Johnny says).
