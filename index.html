@@ -93,6 +93,15 @@
   .unit{color:var(--faint);font-size:11px;margin-left:1px}
   .muted{color:var(--muted)}
 
+  .tscroll{overflow-x:auto}
+  td.who{white-space:nowrap}
+  th.tc{padding-left:6px;padding-right:6px;font-size:13px;letter-spacing:0;text-align:center}
+  td.tc{padding-left:6px;padding-right:6px;text-align:center;color:var(--muted)}
+  td.tc.z{color:var(--faint);opacity:.5}
+  th.tc.first,td.tc.first{border-left:1px solid var(--line);padding-left:12px}
+  .ast{color:var(--krill);font-weight:700;cursor:help;margin-left:1px}
+  .notes{padding:10px 16px 14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 18px}
+  .notes .ast{margin-right:3px}
   .shallow{padding:14px 16px;border-top:1px dashed var(--line2);font-size:13px;color:var(--muted)}
   .shallow b{color:var(--ink);font-weight:600}
 
@@ -112,8 +121,8 @@
   .tile.S{background:var(--t-S)}.tile.L{background:var(--t-L)}.tile.T{background:var(--t-T);box-shadow:0 0 10px rgba(255,224,122,.5)}
   .sc{min-width:64px;text-align:right}
 
-  .legend{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:center;margin-top:22px;font-size:12.5px;color:var(--muted)}
-  .legend span{display:flex;align-items:center;gap:7px}
+  .legend{display:flex;flex-wrap:nowrap;gap:16px;justify-content:center;margin-top:22px;font-size:12.5px;color:var(--muted);overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+  .legend span{display:flex;align-items:center;gap:7px;flex:none}
   .legend .tile{width:20px;height:20px;font-size:11px}
 
   .err{padding:30px;text-align:center;color:var(--muted)}
@@ -121,7 +130,8 @@
   @media (max-width:640px){
     .records{grid-template-columns:1fr}
     .hide-sm{display:none}
-    .gauge{width:44px}
+    .gauge{display:none}
+    .legend{justify-content:flex-start;gap:12px;font-size:11.5px}
     th,td{padding:11px 8px}
     .row{grid-template-columns:30px 1fr auto;padding:11px 12px}
     .row .tiles{grid-column:2/4;grid-row:2}
@@ -152,19 +162,25 @@
   </div>
 
   <section class="panel" id="p-all">
-    <div class="card">
+    <div class="card"><div class="tscroll">
       <table>
         <thead><tr>
           <th class="rkh">#</th>
           <th class="l" data-k="name">Diver</th>
           <th data-k="avg">Avg depth</th>
-          <th data-k="best" class="hide-sm">Deepest</th>
+          <th data-k="best">Deepest</th>
           <th data-k="wins">Wins</th>
           <th data-k="dives">Dives</th>
-          <th data-k="stars" class="hide-sm" title="One in a krillion answers (100)">🌟</th>
+          <th data-k="T" class="tc first" title="One in a krillion (100)">🌟</th>
+          <th data-k="L" class="tc" title="Midnight zone (85)">🏮</th>
+          <th data-k="S" class="tc" title="Twilight zone (60)">🦑</th>
+          <th data-k="F" class="tc" title="Sunlight zone (30)">🐟</th>
+          <th data-k="B" class="tc" title="Surface (10)">🫧</th>
+          <th data-k="X" class="tc" title="No answer (0)">⬛</th>
         </tr></thead>
         <tbody id="tbody"></tbody>
-      </table>
+      </table></div>
+      <div class="notes" id="notes"></div>
       <div class="shallow" id="shallow"></div>
     </div>
     <div class="records" id="records"></div>
@@ -188,6 +204,14 @@
 const TILE = {X:["⬛","No answer",0],B:["🫧","Surface",10],F:["🐟","Sunlight zone",30],
   S:["🦑","Twilight zone",60],L:["🏮","Midnight zone",85],T:["🌟","One in a krillion",100]};
 const MIN_DIVES = 3;
+// Footnotes (asterisks). "name" marks a player's name everywhere it appears;
+// "best" marks a player's deepest dive.
+const NOTES = {
+  name: { "MURP": "MURP cheats" },
+  best: { "Mitch": "Mitch probably cheated" },
+};
+const ast = t => `<span class="ast" title="${esc(t)}">*</span>`;
+const nm = n => esc(n) + (NOTES.name[n] ? ast(NOTES.name[n]) : "");
 let DATA, sortKey = "avg", dayIdx = 0;
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -199,12 +223,11 @@ function stats(){
   for (const day of DATA.puzzles){
     const top = Math.max(...day.scores.map(s => s.score));
     for (const s of day.scores){
-      const r = p[s.name] ??= {name:s.name,dives:0,total:0,best:0,bestNum:0,wins:0,lanterns:0,stars:0};
+      const r = p[s.name] ??= {name:s.name,dives:0,total:0,best:0,bestNum:0,wins:0,T:0,L:0,S:0,F:0,B:0,X:0};
       r.dives++; r.total += s.score;
       if (s.score > r.best){ r.best = s.score; r.bestNum = day.num; }
       if (s.score === top && day.scores.length > 1) r.wins++;
-      r.lanterns += [...(s.tiles||"")].filter(c => c === "L" || c === "T").length;
-      r.stars += [...(s.tiles||"")].filter(c => c === "T").length;
+      for (const c of (s.tiles || "")) if (c in r) r[c]++;
     }
   }
   return Object.values(p).map(r => ({...r, avg: r.total / r.dives}));
@@ -218,11 +241,11 @@ function renderRecords(all){
   const mostWins = [...all].sort((a,b) => b.wins - a.wins || b.avg - a.avg)[0];
   document.getElementById("records").innerHTML = `
     <div class="rec"><span class="ico">🌊</span><div class="k">Deepest dive ever</div>
-      <div class="v">${deep.score}<small>m</small></div><div class="w">${esc(deep.name)} · #${deep.num}</div></div>
+      <div class="v">${deep.score}<small>m</small></div><div class="w">${nm(deep.name)} · #${deep.num}${NOTES.best[deep.name] ? ast(NOTES.best[deep.name]) : ""}</div></div>
     <div class="rec"><span class="ico">🦐</span><div class="k">Krill of the day · #${latest.num}</div>
-      <div class="v">${champ.score}<small>m</small></div><div class="w">${esc(ties.join(" & "))}</div></div>
+      <div class="v">${champ.score}<small>m</small></div><div class="w">${ties.map(nm).join(" &amp; ")}</div></div>
     <div class="rec"><span class="ico">⚓</span><div class="k">Most daily wins</div>
-      <div class="v">${mostWins.wins}<small> wins</small></div><div class="w">${esc(mostWins.name)}</div></div>`;
+      <div class="v">${mostWins.wins}<small> wins</small></div><div class="w">${nm(mostWins.name)}</div></div>`;
 }
 
 function renderTable(all){
@@ -233,17 +256,20 @@ function renderTable(all){
   document.getElementById("tbody").innerHTML = q.map((r,i) => `
     <tr>
       <td class="rk">${i < 3 && sortKey !== "name" ? `<span class="medal m${i+1}">${i+1}</span>` : i+1}</td>
-      <td class="l who">${esc(r.name)}</td>
+      <td class="l who">${nm(r.name)}</td>
       <td><div class="avgcell"><span class="gauge"><i style="width:${(r.avg/maxAvg*100).toFixed(1)}%"></i></span>
         <span class="num">${Math.round(r.avg)}<span class="unit">m</span></span></div></td>
-      <td class="hide-sm">${r.best}<span class="unit">m</span></td>
+      <td>${r.best}<span class="unit">m</span>${NOTES.best[r.name] ? ast(NOTES.best[r.name]) : ""}</td>
       <td>${r.wins}</td>
       <td class="muted">${r.dives}</td>
-      <td class="hide-sm muted">${r.stars}</td>
+      ${["T","L","S","F","B","X"].map((c,j) => `<td class="tc${j ? "" : " first"}${r[c] ? "" : " z"}">${r[c]}</td>`).join("")}
     </tr>`).join("");
   document.querySelectorAll("th[data-k]").forEach(th => th.classList.toggle("sorted", th.dataset.k === sortKey));
+  const notes = [...Object.values(NOTES.best), ...Object.values(NOTES.name)];
+  document.getElementById("notes").innerHTML = notes.map(t => `<span>${ast(t)}${esc(t)}</span>`).join("");
+  document.getElementById("notes").style.display = notes.length ? "" : "none";
   document.getElementById("shallow").innerHTML = sh.length
-    ? `<b>Still in the shallows</b> (fewer than ${MIN_DIVES} dives): ` + sh.sort((a,b)=>b.avg-a.avg).map(r => `${esc(r.name)} ${Math.round(r.avg)}m`).join(" · ")
+    ? `<b>Still in the shallows</b> (fewer than ${MIN_DIVES} dives): ` + sh.sort((a,b)=>b.avg-a.avg).map(r => `${nm(r.name)} ${Math.round(r.avg)}m`).join(" · ")
     : "";
   document.getElementById("shallow").style.display = sh.length ? "" : "none";
 }
@@ -259,7 +285,7 @@ function renderDay(){
     if (s.score !== last){ rank = i + 1; last = s.score; }
     const medal = rank <= 3 ? `<span class="medal m${rank}">${rank}</span>` : `<span class="rk">${rank}</span>`;
     return `<div class="row ${rank === 1 ? "top" : ""}">
-      <div class="rk">${medal}</div><div class="who">${esc(s.name)}</div>${tiles(s.tiles)}
+      <div class="rk">${medal}</div><div class="who">${nm(s.name)}</div>${tiles(s.tiles)}
       <div class="sc"><span class="num">${s.score}</span><span class="unit">m</span></div></div>`;
   }).join("");
 }
