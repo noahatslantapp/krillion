@@ -1,0 +1,746 @@
+{
+ "updated": "2026-11-24T17:53:54+00:00",
+ "puzzles": [
+  {
+   "num": 132,
+   "date": "2026-11-24",
+   "scores": [
+    {
+     "name": "Jeff",
+     "score": 495,
+     "tiles": "SSLLSLS"
+    },
+    {
+     "name": "Carly Brecht",
+     "score": 390,
+     "tiles": "FSLSBLS"
+    },
+    {
+     "name": "Thomas Clawson",
+     "score": 385,
+     "tiles": "FSLSSSF"
+    },
+    {
+     "name": "MURP",
+     "score": 380,
+     "tiles": "SFSLFLF"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 380,
+     "tiles": "SFLLFSF"
+    },
+    {
+     "name": "Haley Brown",
+     "score": 375,
+     "tiles": "SXLLFLF"
+    },
+    {
+     "name": "Mitch",
+     "score": 335,
+     "tiles": "BSSSFLF"
+    },
+    {
+     "name": "Noah Hankin",
+     "score": 330,
+     "tiles": "SBLLFFF"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 290,
+     "tiles": "FTSFFBF"
+    },
+    {
+     "name": "Mckade Adams",
+     "score": 245,
+     "tiles": "FFLFFBF"
+    }
+   ]
+  },
+  {
+   "num": 131,
+   "date": "2026-11-23",
+   "scores": [
+    {
+     "name": "Mckade Adams",
+     "score": 365,
+     "tiles": "SSBFLSS"
+    },
+    {
+     "name": "Jeff",
+     "score": 330,
+     "tiles": "SSFSFFS"
+    },
+    {
+     "name": "Emma Walton",
+     "score": 330,
+     "tiles": "FSSSFSF"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 330,
+     "tiles": "FSSFSSF"
+    },
+    {
+     "name": "Haley Brown",
+     "score": 305,
+     "tiles": "FFSSBFL"
+    },
+    {
+     "name": "Noah Hankin",
+     "score": 280,
+     "tiles": "SFFBFSS"
+    },
+    {
+     "name": "MURP",
+     "score": 270,
+     "tiles": "FXSFFSS"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 240,
+     "tiles": "FFFFFFS"
+    }
+   ]
+  },
+  {
+   "num": 130,
+   "date": "2026-11-22",
+   "scores": [
+    {
+     "name": "Johnny Richards",
+     "score": 435,
+     "tiles": "LSLSLFF"
+    }
+   ]
+  },
+  {
+   "num": 128,
+   "date": "2026-11-20",
+   "scores": [
+    {
+     "name": "Mitch",
+     "score": 700,
+     "tiles": "TTTTTTT"
+    },
+    {
+     "name": "MURP",
+     "score": 465,
+     "tiles": "LLLSSFS"
+    },
+    {
+     "name": "Jeff",
+     "score": 410,
+     "tiles": "LSSFSFL"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 385,
+     "tiles": "LFSSSSF"
+    },
+    {
+     "name": "Mckade Adams",
+     "score": 310,
+     "tiles": "BSSSSFF"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 240,
+     "tiles": "FSSXFFF"
+    }
+   ]
+  },
+  {
+   "num": 127,
+   "date": "2026-11-19",
+   "scores": [
+    {
+     "name": "Johnny Richards",
+     "score": 365,
+     "tiles": "SSSLBFS"
+    },
+    {
+     "name": "Carly Brecht",
+     "score": 355,
+     "tiles": "SLSXFSS"
+    },
+    {
+     "name": "Jeff",
+     "score": 335,
+     "tiles": "SFLSFBS"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 310,
+     "tiles": "FSBSFSS"
+    },
+    {
+     "name": "Noah Hankin",
+     "score": 305,
+     "tiles": "FSFFLBS"
+    }
+   ]
+  },
+  {
+   "num": 126,
+   "date": "2026-11-18",
+   "scores": [
+    {
+     "name": "MURP",
+     "score": 460,
+     "tiles": "SLLLFLF"
+    },
+    {
+     "name": "Jeff",
+     "score": 365,
+     "tiles": "BSSLSSF"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 330,
+     "tiles": "FLSLBXS"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 300,
+     "tiles": "SSSFFFF"
+    }
+   ]
+  },
+  {
+   "num": 125,
+   "date": "2026-11-17",
+   "scores": [
+    {
+     "name": "MURP",
+     "score": 470,
+     "tiles": "SLSLSSS"
+    },
+    {
+     "name": "Jeff",
+     "score": 440,
+     "tiles": "SLFSSLS"
+    },
+    {
+     "name": "Mckade Adams",
+     "score": 365,
+     "tiles": "BSSSLFS"
+    },
+    {
+     "name": "Mitch",
+     "score": 340,
+     "tiles": "FSBSSSS"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 300,
+     "tiles": "FSFSFFS"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 275,
+     "tiles": "FBFLSSX"
+    }
+   ]
+  },
+  {
+   "num": 124,
+   "date": "2026-11-16",
+   "scores": [
+    {
+     "name": "Johnny Richards",
+     "score": 350,
+     "tiles": "FLSLXFS"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 350,
+     "tiles": "FLXSLSF"
+    },
+    {
+     "name": "John Sandberg",
+     "score": 340,
+     "tiles": "BLSLBFS"
+    },
+    {
+     "name": "Haley Brown",
+     "score": 250,
+     "tiles": "SFBFFFS"
+    }
+   ]
+  },
+  {
+   "num": 121,
+   "date": "2026-11-13",
+   "scores": [
+    {
+     "name": "Jeff",
+     "score": 445,
+     "tiles": "SLSSSSS"
+    },
+    {
+     "name": "Mitch",
+     "score": 420,
+     "tiles": "SLLSBSS"
+    },
+    {
+     "name": "MURP",
+     "score": 415,
+     "tiles": "SSLSSFS"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 360,
+     "tiles": "SFSFSSS"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 335,
+     "tiles": "SFSFSLB"
+    },
+    {
+     "name": "Noah Hankin",
+     "score": 280,
+     "tiles": "BSFFFSS"
+    },
+    {
+     "name": "Mckade Adams",
+     "score": 270,
+     "tiles": "XSFFSSF"
+    },
+    {
+     "name": "Chris Arnold",
+     "score": 270,
+     "tiles": "SFFFFSF"
+    },
+    {
+     "name": "Haley Brown",
+     "score": 250,
+     "tiles": "FFBFSSF"
+    }
+   ]
+  },
+  {
+   "num": 120,
+   "date": "2026-11-12",
+   "scores": [
+    {
+     "name": "Jeff",
+     "score": 415,
+     "tiles": "SLFSSSS"
+    },
+    {
+     "name": "MURP",
+     "score": 360,
+     "tiles": "SSFSSSF"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 330,
+     "tiles": "SSFFSSF"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 310,
+     "tiles": "SFFSSSB"
+    }
+   ]
+  },
+  {
+   "num": 119,
+   "date": "2026-11-11",
+   "scores": [
+    {
+     "name": "MURP",
+     "score": 385,
+     "tiles": "LSSFFSS"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 360,
+     "tiles": "SSFSSFS"
+    },
+    {
+     "name": "Jeff",
+     "score": 355,
+     "tiles": "FFSSFSL"
+    },
+    {
+     "name": "Noah Hankin",
+     "score": 260,
+     "tiles": "FSSBSBF"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 250,
+     "tiles": "SBFFSFF"
+    }
+   ]
+  },
+  {
+   "num": 118,
+   "date": "2026-11-10",
+   "scores": [
+    {
+     "name": "MURP",
+     "score": 420,
+     "tiles": "SSSLSBL"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 355,
+     "tiles": "FFFLSSS"
+    },
+    {
+     "name": "Haley Brown",
+     "score": 340,
+     "tiles": "BFSLLSB"
+    },
+    {
+     "name": "Mitch",
+     "score": 335,
+     "tiles": "LLFFBBL"
+    },
+    {
+     "name": "Jeff",
+     "score": 335,
+     "tiles": "SLXBSSS"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 330,
+     "tiles": "LLFBFFS"
+    },
+    {
+     "name": "Carly Brecht",
+     "score": 270,
+     "tiles": "XSSSSFX"
+    },
+    {
+     "name": "Noah Hankin",
+     "score": 260,
+     "tiles": "SSFBSBF"
+    }
+   ]
+  },
+  {
+   "num": 117,
+   "date": "2026-11-09",
+   "scores": [
+    {
+     "name": "Jeff",
+     "score": 410,
+     "tiles": "SFSLFLS"
+    },
+    {
+     "name": "MURP",
+     "score": 410,
+     "tiles": "LLFSSFS"
+    },
+    {
+     "name": "Mitch",
+     "score": 375,
+     "tiles": "LLXFFLS"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 310,
+     "tiles": "SSSFFSB"
+    },
+    {
+     "name": "Chris Arnold",
+     "score": 275,
+     "tiles": "LFFFSFB"
+    },
+    {
+     "name": "Haley Brown",
+     "score": 255,
+     "tiles": "LBFFFSB"
+    },
+    {
+     "name": "Noah Hankin",
+     "score": 220,
+     "tiles": "SFFFFFB"
+    }
+   ]
+  },
+  {
+   "num": 116,
+   "date": "2026-11-08",
+   "scores": [
+    {
+     "name": "Noah Hankin",
+     "score": 440,
+     "tiles": "LSSSLSF"
+    },
+    {
+     "name": "Mitch",
+     "score": 435,
+     "tiles": "SLFLLSF"
+    },
+    {
+     "name": "Jeff",
+     "score": 335,
+     "tiles": "LSSSBXS"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 250,
+     "tiles": "SFFSBFF"
+    }
+   ]
+  },
+  {
+   "num": 114,
+   "date": "2026-11-06",
+   "scores": [
+    {
+     "name": "MURP",
+     "score": 420,
+     "tiles": "SSSSSSS"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 360,
+     "tiles": "FSSFSSS"
+    },
+    {
+     "name": "Jeff",
+     "score": 310,
+     "tiles": "SSBFFSS"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 310,
+     "tiles": "BFSFSSS"
+    },
+    {
+     "name": "Chris Arnold",
+     "score": 305,
+     "tiles": "BLSXFSS"
+    },
+    {
+     "name": "Noah Hankin",
+     "score": 300,
+     "tiles": "FSXFSSS"
+    },
+    {
+     "name": "Mitch",
+     "score": 280,
+     "tiles": "SSXBFSS"
+    },
+    {
+     "name": "Carly Brecht",
+     "score": 210,
+     "tiles": "FSXXSSX"
+    },
+    {
+     "name": "Haley Brown",
+     "score": 170,
+     "tiles": "FSXBFFB"
+    }
+   ]
+  },
+  {
+   "num": 113,
+   "date": "2026-11-05",
+   "scores": [
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 415,
+     "tiles": "FSSSSSL"
+    },
+    {
+     "name": "Jeff",
+     "score": 335,
+     "tiles": "BSLSFSF"
+    },
+    {
+     "name": "Mitch",
+     "score": 310,
+     "tiles": "FSSSBFS"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 295,
+     "tiles": "LFSFFSX"
+    },
+    {
+     "name": "Carly Brecht",
+     "score": 285,
+     "tiles": "BLFSFSB"
+    },
+    {
+     "name": "Noah Hankin",
+     "score": 275,
+     "tiles": "FFFFLSB"
+    },
+    {
+     "name": "MURP",
+     "score": 265,
+     "tiles": "FLSBSBB"
+    },
+    {
+     "name": "Haley Brown",
+     "score": 255,
+     "tiles": "FLFFBSB"
+    }
+   ]
+  },
+  {
+   "num": 112,
+   "date": "2026-11-04",
+   "scores": [
+    {
+     "name": "Mitch",
+     "score": 385,
+     "tiles": "LSSSSXS"
+    },
+    {
+     "name": "Jeff",
+     "score": 310,
+     "tiles": "SSSFSFB"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 300,
+     "tiles": "SSFSFFF"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 230,
+     "tiles": "SFBFBSF"
+    },
+    {
+     "name": "Carly Brecht",
+     "score": 210,
+     "tiles": "FSXFFXS"
+    },
+    {
+     "name": "Haley Brown",
+     "score": 200,
+     "tiles": "SFBFFFB"
+    }
+   ]
+  },
+  {
+   "num": 111,
+   "date": "2026-11-03",
+   "scores": [
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 325,
+     "tiles": "SFLFFFS"
+    },
+    {
+     "name": "Jeff",
+     "score": 305,
+     "tiles": "FLFBFSS"
+    },
+    {
+     "name": "Carly Brecht",
+     "score": 255,
+     "tiles": "SBLFFBF"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 250,
+     "tiles": "FSSFFBF"
+    },
+    {
+     "name": "Mitch",
+     "score": 230,
+     "tiles": "FSBFFBS"
+    },
+    {
+     "name": "Noah Hankin",
+     "score": 225,
+     "tiles": "FBFLBFF"
+    },
+    {
+     "name": "Haley Brown",
+     "score": 110,
+     "tiles": "BFBBFBB"
+    }
+   ]
+  },
+  {
+   "num": 110,
+   "date": "2026-11-02",
+   "scores": [
+    {
+     "name": "Jeff",
+     "score": 360,
+     "tiles": "FLSBSFL"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 330,
+     "tiles": "FSSSFFS"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 280,
+     "tiles": "FSSBFSF"
+    },
+    {
+     "name": "Haley Brown",
+     "score": 255,
+     "tiles": "SLSBBXF"
+    },
+    {
+     "name": "Noah Hankin",
+     "score": 250,
+     "tiles": "SFFSFFB"
+    }
+   ]
+  },
+  {
+   "num": 107,
+   "date": "2026-10-30",
+   "scores": [
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 415,
+     "tiles": "SSSSLSF"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 360,
+     "tiles": "LLFFBSS"
+    },
+    {
+     "name": "Noah Hankin",
+     "score": 300,
+     "tiles": "FXSFSSS"
+    },
+    {
+     "name": "Haley Brown",
+     "score": 280,
+     "tiles": "FFSBSSF"
+    },
+    {
+     "name": "Jeff",
+     "score": 250,
+     "tiles": "FSFBSFF"
+    },
+    {
+     "name": "Carly Brecht",
+     "score": 245,
+     "tiles": "FSXBFLF"
+    }
+   ]
+  },
+  {
+   "num": 106,
+   "date": "2026-10-29",
+   "scores": [
+    {
+     "name": "Johnny Richards",
+     "score": 250,
+     "tiles": "FFSBFSF"
+    }
+   ]
+  }
+ ]
+}
