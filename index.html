@@ -208,7 +208,7 @@ const MIN_DIVES = 3;
 // "best" marks a player's deepest dive.
 const NOTES = {
   name: { "MURP": "MURP cheats" },
-  best: { "Mitch": "Mitch probably cheated" },
+  best: {},
 };
 const ast = t => `<span class="ast" title="${esc(t)}">*</span>`;
 const nm = n => esc(n) + (NOTES.name[n] ? ast(NOTES.name[n]) : "");
