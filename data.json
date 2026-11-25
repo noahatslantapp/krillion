@@ -1,6 +1,37 @@
 {
- "updated": "2026-11-25T03:44:29+00:00",
+ "updated": "2026-11-25T16:38:13+00:00",
  "puzzles": [
+  {
+   "num": 133,
+   "date": "2026-11-25",
+   "scores": [
+    {
+     "name": "MURP",
+     "score": 460,
+     "tiles": "LLSLFLF"
+    },
+    {
+     "name": "Johnny Richards",
+     "score": 390,
+     "tiles": "LSBLFSS"
+    },
+    {
+     "name": "Jonathan Farnsworth",
+     "score": 380,
+     "tiles": "LLBLXLF"
+    },
+    {
+     "name": "Noah Hankin",
+     "score": 295,
+     "tiles": "SBBSBLS"
+    },
+    {
+     "name": "Thomas Clawson",
+     "score": 290,
+     "tiles": "BSBSSSF"
+    }
+   ]
+  },
   {
    "num": 132,
    "date": "2026-11-24",
