@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T20:49:57+00:00",
+ "updated": "2026-11-25T03:44:29+00:00",
  "puzzles": [
   {
    "num": 132,
@@ -123,11 +123,6 @@
    "num": 128,
    "date": "2026-11-20",
    "scores": [
-    {
-     "name": "Mitch",
-     "score": 700,
-     "tiles": "TTTTTTT"
-    },
     {
      "name": "MURP",
      "score": 465,
